@@ -1,0 +1,2955 @@
+
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+
+@prefix ca: <http://floss.syr.edu/ontologies/2008/4/contentAnalysis.owl#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix vivo: <http://vivoweb.org/ontology/core#> .
+
+@prefix bioj: <http://james.howison.name/ontologies/bio-journal-sample#> .
+@prefix citec: <http://james.howison.name/ontologies/software-citation-coding#> .
+@prefix bioj-cited: <http://james.howison.name/ontologies/bio-journal-sample-citation#> .
+@prefix pmcid: <https://www.ncbi.nlm.nih.gov/pmc/articles/> .
+@prefix pmcid-cited: <http://james.howison.name/ontologies/pmcid-journal-sample-citation#> .
+@prefix doi: <http://doi.org/> .
+@prefix doi-cited: <http://james.howison.name/ontologies/doi-journal-sample-citation#> .
+
+@prefix dc: <http://dublincore.org/documents/2012/06/14/dcmi-terms/> .
+
+# https://github.com/howisonlab/softcite-pdf-files/blob/master/docs/pdf-files/economics_pdf_files/10.1007%252Fs10888-017-9367-5.pdf
+# also https://doi.org/10.1007%2Fs10888-017-9367-5
+doi:10.1007%2Fs10888-017-9367-5 rdf:type bioj:article ;
+    rdf:type bioj:econ_article ;
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:codable ;
+                           citec:isPresent true; # true if can code
+                         ] ;
+        ] ;
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:standard_type ;
+                           citec:isPresent true ; # true if standard article
+                         ] ;
+        ] ;
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:coded_no_in_text_mentions ;
+                           citec:isPresent false; # true/false
+                         ] ;
+        ] ;
+
+
+    citec:has_in_text_mention doi:10.1007%2Fs10888-017-9367-5_TL01 ;
+    citec:has_in_text_mention doi:10.1007%2Fs10888-017-9367-5_TL02 ;
+    citec:has_in_text_mention doi:10.1007%2Fs10888-017-9367-5_TL03 ;
+    citec:has_in_text_mention doi:10.1007%2Fs10888-017-9367-5_TL04 ;
+    citec:has_in_text_mention doi:10.1007%2Fs10888-017-9367-5_TL05 ;
+    citec:has_in_text_mention doi:10.1007%2Fs10888-017-9367-5_TL06 ;
+    citec:has_in_text_mention doi:10.1007%2Fs10888-017-9367-5_TL07 ;
+    citec:has_in_text_mention doi:10.1007%2Fs10888-017-9367-5_TL08 ;
+    citec:has_in_text_mention doi:10.1007%2Fs10888-017-9367-5_TL09 ;
+    citec:has_in_text_mention doi:10.1007%2Fs10888-017-9367-5_TL10 ;
+    citec:has_in_text_mention doi:10.1007%2Fs10888-017-9367-5_TL11 ;
+    citec:has_in_text_mention doi:10.1007%2Fs10888-017-9367-5_TL12 ;
+    citec:has_in_text_mention doi:10.1007%2Fs10888-017-9367-5_TL13 ;
+    citec:has_in_text_mention doi:10.1007%2Fs10888-017-9367-5_TL14 ;
+    citec:has_in_text_mention doi:10.1007%2Fs10888-017-9367-5_TL15 ;
+    citec:has_in_text_mention doi:10.1007%2Fs10888-017-9367-5_TL16 ;
+    citec:has_in_text_mention doi:10.1007%2Fs10888-017-9367-5_TL17 ;
+    citec:has_in_text_mention doi:10.1007%2Fs10888-017-9367-5_TL18 ;
+    citec:has_in_text_mention doi:10.1007%2Fs10888-017-9367-5_TL19 ;
+    citec:has_in_text_mention doi:10.1007%2Fs10888-017-9367-5_TL20 ;
+    citec:has_in_text_mention doi:10.1007%2Fs10888-017-9367-5_TL21 ;
+    citec:has_in_text_mention doi:10.1007%2Fs10888-017-9367-5_TL22 ;
+    citec:has_in_text_mention doi:10.1007%2Fs10888-017-9367-5_TL23 ;
+    citec:has_in_text_mention doi:10.1007%2Fs10888-017-9367-5_TL24 ;
+    citec:has_in_text_mention doi:10.1007%2Fs10888-017-9367-5_TL25 ;
+    citec:has_in_text_mention doi:10.1007%2Fs10888-017-9367-5_TL26 ;
+    citec:has_in_text_mention doi:10.1007%2Fs10888-017-9367-5_TL27 ;
+    citec:has_in_text_mention doi:10.1007%2Fs10888-017-9367-5_TL28 ;
+    citec:has_in_text_mention doi:10.1007%2Fs10888-017-9367-5_TL29 ;
+    citec:has_in_text_mention doi:10.1007%2Fs10888-017-9367-5_TL30 ;
+    citec:has_in_text_mention doi:10.1007%2Fs10888-017-9367-5_TL31 ;
+    citec:has_in_text_mention doi:10.1007%2Fs10888-017-9367-5_TL32 ;
+    citec:has_in_text_mention doi:10.1007%2Fs10888-017-9367-5_TL33 ;
+    citec:has_in_text_mention doi:10.1007%2Fs10888-017-9367-5_TL34 ;
+    citec:has_in_text_mention doi:10.1007%2Fs10888-017-9367-5_TL35 ;
+    citec:has_in_text_mention doi:10.1007%2Fs10888-017-9367-5_TL36 ;
+    citec:has_in_text_mention doi:10.1007%2Fs10888-017-9367-5_TL37 ;
+    citec:has_in_text_mention doi:10.1007%2Fs10888-017-9367-5_TL38 ;
+    citec:has_in_text_mention doi:10.1007%2Fs10888-017-9367-5_TL39 ;
+    citec:has_in_text_mention doi:10.1007%2Fs10888-017-9367-5_TL40 ;
+    citec:has_in_text_mention doi:10.1007%2Fs10888-017-9367-5_TL41 ;
+    citec:has_in_text_mention doi:10.1007%2Fs10888-017-9367-5_TL42 ;
+    citec:has_in_text_mention doi:10.1007%2Fs10888-017-9367-5_TL43 ;
+    citec:has_in_text_mention doi:10.1007%2Fs10888-017-9367-5_TL44 ;
+    citec:has_in_text_mention doi:10.1007%2Fs10888-017-9367-5_TL45 ;
+    citec:has_in_text_mention doi:10.1007%2Fs10888-017-9367-5_TL46 ;
+    citec:has_in_text_mention doi:10.1007%2Fs10888-017-9367-5_TL47 ;
+    # create name for in_text_mention like
+    # doi:10.1007%2Fs10888-017-9367-5_JH01
+
+    # citations like:
+    # doi-cited:10.1007%2Fs10888-017-9367-5_AuthorYear
+.
+doi:10.1007%2Fs10888-017-9367-5_TL01 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """e (See EUROMOD statistics on Distribution and Decomposition of
+Disposable Income, accessed at http://www.euromod.ac.uk/using-euromod/statistics)""" ; # use triple quotes
+
+    citec:on_pdf_page 2  ; # integer
+
+    citec:spans_pages false ; # true/false
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:mention_type ;
+                           rdfs:label """software""" ; # put one in triple quotes
+                           ca:certainty 10 ; # integer
+                           ca:memo """googled""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_was_used ;
+                           citec:isPresent false; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_name ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """EUROMOD""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_number ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_date ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:url ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:creator ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+.
+doi:10.1007%2Fs10888-017-9367-5_TL02 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """inspired the development of the European microsimulation model EUROMOD""" ; # use triple quotes
+
+    citec:on_pdf_page 3  ; # integer
+
+    citec:spans_pages false ; # true/false
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:mention_type ;
+                           rdfs:label """software""" ; # put one in triple quotes
+                           ca:certainty 10 ; # integer
+                           ca:memo """googled""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_was_used ;
+                           citec:isPresent true; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_name ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """EUROMOD""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_number ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_date ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:url ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:creator ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+.
+doi:10.1007%2Fs10888-017-9367-5_TL03 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """The present paper takes advantage of the recent development of such harmonized
+microsimulation models for Ecuador and Colombia, ECUAMOD and COLMOD""" ; # use triple quotes
+
+    citec:on_pdf_page 3  ; # integer
+
+    citec:spans_pages false ; # true/false
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:mention_type ;
+                           rdfs:label """software""" ; # put one in triple quotes
+                           ca:certainty 10 ; # integer
+                           ca:memo """googled""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_was_used ;
+                           citec:isPresent true; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_name ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """ECUAMOD""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_number ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_date ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:url ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:creator ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+.
+doi:10.1007%2Fs10888-017-9367-5_TL04 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """The present paper takes advantage of the recent development of such harmonized
+microsimulation models for Ecuador and Colombia, ECUAMOD and COLMOD""" ; # use triple quotes
+
+    citec:on_pdf_page 3  ; # integer
+
+    citec:spans_pages false ; # true/false
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:mention_type ;
+                           rdfs:label """software""" ; # put one in triple quotes
+                           ca:certainty 10 ; # integer
+                           ca:memo """googled""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_was_used ;
+                           citec:isPresent true; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_name ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """COLMOD""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_number ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_date ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:url ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:creator ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+.
+doi:10.1007%2Fs10888-017-9367-5_TL05 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """They are developed as a multi-country microsimulation embedded in
+the modeling structure of EUROMOD""" ; # use triple quotes
+
+    citec:on_pdf_page 3  ; # integer
+
+    citec:spans_pages false ; # true/false
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:mention_type ;
+                           rdfs:label """software""" ; # put one in triple quotes
+                           ca:certainty 10 ; # integer
+                           ca:memo """googled""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_was_used ;
+                           citec:isPresent true; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_name ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """EUROMOD""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_number ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_date ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:url ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:creator ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+.
+doi:10.1007%2Fs10888-017-9367-5_TL06 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """lar policies from one country to another when using the European microsimulation model
+EUROMOD, learning""" ; # use triple quotes
+
+    citec:on_pdf_page 3  ; # integer
+
+    citec:spans_pages false ; # true/false
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:mention_type ;
+                           rdfs:label """software""" ; # put one in triple quotes
+                           ca:certainty 10 ; # integer
+                           ca:memo """googled""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_was_used ;
+                           citec:isPresent true; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_name ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """EUROMOD""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_number ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_date ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:url ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:creator ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+.
+doi:10.1007%2Fs10888-017-9367-5_TL07 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """9See EUROMOD statistics on Distribution and Decomposition of Disposable Income, accessed at http://
+www.euromod.ac.uk/using-euromod/statistics""" ; # use triple quotes
+
+    citec:on_pdf_page 5  ; # integer
+
+    citec:spans_pages false ; # true/false
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:mention_type ;
+                           rdfs:label """software""" ; # put one in triple quotes
+                           ca:certainty 10 ; # integer
+                           ca:memo """googled""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_was_used ;
+                           citec:isPresent false; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_name ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """EUROMOD""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_number ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_date ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:url ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:creator ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+.
+doi:10.1007%2Fs10888-017-9367-5_TL08 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """Our study makes use of the newly developed tax-benefit
+microsimulation models ECUAMOD and COLMOD.16""" ; # use triple quotes
+
+    citec:on_pdf_page 8  ; # integer
+
+    citec:spans_pages false ; # true/false
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:mention_type ;
+                           rdfs:label """software""" ; # put one in triple quotes
+                           ca:certainty 10 ; # integer
+                           ca:memo """googled""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_was_used ;
+                           citec:isPresent true; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_name ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """ECUAMOD""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_number ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_date ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:url ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:creator ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+.
+doi:10.1007%2Fs10888-017-9367-5_TL09 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """Our study makes use of the newly developed tax-benefit
+microsimulation models ECUAMOD and COLMOD.16""" ; # use triple quotes
+
+    citec:on_pdf_page 8  ; # integer
+
+    citec:spans_pages false ; # true/false
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:mention_type ;
+                           rdfs:label """software""" ; # put one in triple quotes
+                           ca:certainty 10 ; # integer
+                           ca:memo """googled""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_was_used ;
+                           citec:isPresent true; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_name ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """COLMOD""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_number ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_date ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:url ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:creator ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+.doi:10.1007%2Fs10888-017-9367-5_TL10 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """6 ECUAMOD and COLMOD combine
+detailed country-specific coded policy rules with cross-se""" ; # use triple quotes
+
+    citec:on_pdf_page 8  ; # integer
+
+    citec:spans_pages false ; # true/false
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:mention_type ;
+                           rdfs:label """software""" ; # put one in triple quotes
+                           ca:certainty 10 ; # integer
+                           ca:memo """googled""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_was_used ;
+                           citec:isPresent true; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_name ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """ECUAMOD""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_number ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_date ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:url ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:creator ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+.doi:10.1007%2Fs10888-017-9367-5_TL11 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """6 ECUAMOD and COLMOD combine
+detailed country-specific coded policy rules with cross-se""" ; # use triple quotes
+
+    citec:on_pdf_page 8  ; # integer
+
+    citec:spans_pages false ; # true/false
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:mention_type ;
+                           rdfs:label """software""" ; # put one in triple quotes
+                           ca:certainty 10 ; # integer
+                           ca:memo """googled""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_was_used ;
+                           citec:isPresent true; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_name ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """COLMOD""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_number ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_date ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:url ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:creator ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+.
+doi:10.1007%2Fs10888-017-9367-5_TL12 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """The models have been implemented on
+the EUROMOD software, which enables users to analyze the effect of tax-benefit policies
+on the income distribution in a comparable manner across countries. """ ; # use triple quotes
+
+    citec:on_pdf_page 8  ; # integer
+
+    citec:spans_pages false ; # true/false
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:mention_type ;
+                           rdfs:label """software""" ; # put one in triple quotes
+                           ca:certainty 10 ; # integer
+                           ca:memo """says software""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_was_used ;
+                           citec:isPresent true; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_name ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """EUROMOD""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_number ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_date ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:url ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:creator ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+.
+doi:10.1007%2Fs10888-017-9367-5_TL13 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """Both, ECUAMOD and
+COLMOD, are static models in the sense that tax-benefit simulations abstract from behavioral
+reactions of individuals and no adjustments are made for changes in the population
+composition over time.""" ; # use triple quotes
+
+    citec:on_pdf_page 8  ; # integer
+
+    citec:spans_pages false ; # true/false
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:mention_type ;
+                           rdfs:label """software""" ; # put one in triple quotes
+                           ca:certainty 10 ; # integer
+                           ca:memo """googled""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_was_used ;
+                           citec:isPresent true; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_name ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """EUROMOD""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_number ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_date ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:url ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:creator ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+.
+doi:10.1007%2Fs10888-017-9367-5_TL14 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """Both, ECUAMOD and
+COLMOD, are static models in the sense that tax-benefit simulations abstract from behavioral
+reactions of individuals and no adjustments are made for changes in the population
+composition over time.""" ; # use triple quotes
+
+    citec:on_pdf_page 8  ; # integer
+
+    citec:spans_pages false ; # true/false
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:mention_type ;
+                           rdfs:label """software""" ; # put one in triple quotes
+                           ca:certainty 10 ; # integer
+                           ca:memo """googled""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_was_used ;
+                           citec:isPresent true; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_name ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """COLMOD""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_number ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_date ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:url ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:creator ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+.
+doi:10.1007%2Fs10888-017-9367-5_TL15 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """Table 1 provides a summary of the tax-benefit instruments simulated in
+ECUAMOD and COLMOD for the purpose of our exercise.""" ; # use triple quotes
+
+    citec:on_pdf_page 8  ; # integer
+
+    citec:spans_pages false ; # true/false
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:mention_type ;
+                           rdfs:label """software""" ; # put one in triple quotes
+                           ca:certainty 10 ; # integer
+                           ca:memo """googled""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_was_used ;
+                           citec:isPresent true; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_name ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """ECUAMOD""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_number ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_date ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:url ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:creator ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+.
+doi:10.1007%2Fs10888-017-9367-5_TL16 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """Table 1 provides a summary of the tax-benefit instruments simulated in
+ECUAMOD and COLMOD for the purpose of our exercise.""" ; # use triple quotes
+
+    citec:on_pdf_page 8  ; # integer
+
+    citec:spans_pages false ; # true/false
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:mention_type ;
+                           rdfs:label """software""" ; # put one in triple quotes
+                           ca:certainty 10 ; # integer
+                           ca:memo """googled""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_was_used ;
+                           citec:isPresent true; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_name ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """COLMOD""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_number ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_date ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:url ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:creator ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+.
+doi:10.1007%2Fs10888-017-9367-5_TL17 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """6ECUAMOD has been developed as part of UNU-WIDER’s projec""" ; # use triple quotes
+
+    citec:on_pdf_page 8  ; # integer
+
+    citec:spans_pages false ; # true/false
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:mention_type ;
+                           rdfs:label """software""" ; # put one in triple quotes
+                           ca:certainty 10 ; # integer
+                           ca:memo """googled""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_was_used ;
+                           citec:isPresent true; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_name ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """EUCAMOD""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_number ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_date ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:url ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:creator ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+.
+doi:10.1007%2Fs10888-017-9367-5_TL18 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """SOUTHMOD—simulating tax
+and benefit policies for development’ in which tax–benefit microsimulation models have being built for
+selected developing countries""" ; # use triple quotes
+
+    citec:on_pdf_page 8  ; # integer
+
+    citec:spans_pages false ; # true/false
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:mention_type ;
+                           rdfs:label """software""" ; # put one in triple quotes
+                           ca:certainty 10 ; # integer
+                           ca:memo """software collection""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_was_used ;
+                           citec:isPresent true; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_name ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """SOUTHMOD""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_number ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_date ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:url ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:creator ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+.
+doi:10.1007%2Fs10888-017-9367-5_TL19 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """Simulation results for ECUAMOD have been validated both at the micro and
+macro level (see Jara et al. 2017).""" ; # use triple quotes
+
+    citec:on_pdf_page 8  ; # integer
+
+    citec:spans_pages false ; # true/false
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:mention_type ;
+                           rdfs:label """software""" ; # put one in triple quotes
+                           ca:certainty 10 ; # integer
+                           ca:memo """googled""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_was_used ;
+                           citec:isPresent false; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_name ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """ECUAMOD""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_number ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_date ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:url ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:creator ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+.
+doi:10.1007%2Fs10888-017-9367-5_TL20 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """For more information about SOUTHMOD see: https://www.wider.unu.
+edu/project/southmod-simulating-tax-and-benefit-policies-development.""" ; # use triple quotes
+
+    citec:on_pdf_page 8  ; # integer
+
+    citec:spans_pages false ; # true/false
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:mention_type ;
+                           rdfs:label """software""" ; # put one in triple quotes
+                           ca:certainty 10 ; # integer
+                           ca:memo """collection of software""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_was_used ;
+                           citec:isPresent false; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_name ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """SOUTHMOD""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_number ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_date ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:url ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """ https://www.wider.unu.
+                       edu/project/southmod-simulating-tax-and-benefit-policies-development.""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:creator ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+.
+doi:10.1007%2Fs10888-017-9367-5_TL21 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """In both, ECUAMOD and COLMOD, personal income tax is simulated
+under the assumption of full compliance.""" ; # use triple quotes
+
+    citec:on_pdf_page 10  ; # integer
+
+    citec:spans_pages false ; # true/false
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:mention_type ;
+                           rdfs:label """software""" ; # put one in triple quotes
+                           ca:certainty 10 ; # integer
+                           ca:memo """googled""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_was_used ;
+                           citec:isPresent true; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_name ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """ECUAMOD""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_number ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_date ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:url ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:creator ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+.
+doi:10.1007%2Fs10888-017-9367-5_TL22 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """In both, ECUAMOD and COLMOD, personal income tax is simulated
+under the assumption of full compliance.""" ; # use triple quotes
+
+    citec:on_pdf_page 10  ; # integer
+
+    citec:spans_pages false ; # true/false
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:mention_type ;
+                           rdfs:label """software""" ; # put one in triple quotes
+                           ca:certainty 10 ; # integer
+                           ca:memo """googled""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_was_used ;
+                           citec:isPresent true; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_name ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """COLMOD""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_number ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_date ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:url ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:creator ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+.
+doi:10.1007%2Fs10888-017-9367-5_TL23 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """ECUAMOD and COLMOD simulations
+cover the most important direct taxes and cash transfers present in Ecuador and Colombia.
+Table 2 provides a list of all income components used in our simulation models""" ; # use triple quotes
+
+    citec:on_pdf_page 11  ; # integer
+
+    citec:spans_pages false ; # true/false
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:mention_type ;
+                           rdfs:label """software""" ; # put one in triple quotes
+                           ca:certainty 10 ; # integer
+                           ca:memo """googled""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_was_used ;
+                           citec:isPresent true; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_name ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """ECUAMOD""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_number ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_date ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:url ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:creator ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+.
+doi:10.1007%2Fs10888-017-9367-5_TL24 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """ECUAMOD and COLMOD simulations
+cover the most important direct taxes and cash transfers present in Ecuador and Colombia.
+Table 2 provides a list of all income components used in our simulation models""" ; # use triple quotes
+
+    citec:on_pdf_page 11  ; # integer
+
+    citec:spans_pages false ; # true/false
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:mention_type ;
+                           rdfs:label """software""" ; # put one in triple quotes
+                           ca:certainty 10 ; # integer
+                           ca:memo """googled""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_was_used ;
+                           citec:isPresent true; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_name ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """COLMOD""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_number ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_date ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:url ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:creator ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+.
+doi:10.1007%2Fs10888-017-9367-5_TL25 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """ECUAMOD and COLMOD to those of external benchmarks (see detailed discussions in
+Jara et al. 2017 and Rodriguez 2017).""" ; # use triple quotes
+
+    citec:on_pdf_page 12  ; # integer
+
+    citec:spans_pages false ; # true/false
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:mention_type ;
+                           rdfs:label """software""" ; # put one in triple quotes
+                           ca:certainty 10 ; # integer
+                           ca:memo """googled""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_was_used ;
+                           citec:isPresent true; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_name ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """ECUAMOD""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_number ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_date ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:url ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:creator ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+.
+doi:10.1007%2Fs10888-017-9367-5_TL26 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """ECUAMOD and COLMOD to those of external benchmarks (see detailed discussions in
+Jara et al. 2017 and Rodriguez 2017).""" ; # use triple quotes
+
+    citec:on_pdf_page 12  ; # integer
+
+    citec:spans_pages false ; # true/false
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:mention_type ;
+                           rdfs:label """software""" ; # put one in triple quotes
+                           ca:certainty 10 ; # integer
+                           ca:memo """googled""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_was_used ;
+                           citec:isPresent true; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_name ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """COLMOD""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_number ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_date ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:url ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:creator ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+.
+doi:10.1007%2Fs10888-017-9367-5_TL27 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """) show that the distribution of income tax payers by amount of income tax obtained
+using ECUAMOD simulations capture quite well the distribution of income tax payers
+according to administrative data. R""" ; # use triple quotes
+
+    citec:on_pdf_page 13  ; # integer
+
+    citec:spans_pages false ; # true/false
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:mention_type ;
+                           rdfs:label """software""" ; # put one in triple quotes
+                           ca:certainty 10 ; # integer
+                           ca:memo """googled""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_was_used ;
+                           citec:isPresent true; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_name ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """ECUAMOD""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_number ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_date ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:url ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:creator ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+.
+doi:10.1007%2Fs10888-017-9367-5_TL28 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """ECUAMOD captures very well the
+number of recipients of the HDT""" ; # use triple quotes
+
+    citec:on_pdf_page 13  ; # integer
+
+    citec:spans_pages false ; # true/false
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:mention_type ;
+                           rdfs:label """software""" ; # put one in triple quotes
+                           ca:certainty 10 ; # integer
+                           ca:memo """googled""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_was_used ;
+                           citec:isPresent true; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_name ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """ECUAMOD""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_number ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_date ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:url ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:creator ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+.
+doi:10.1007%2Fs10888-017-9367-5_TL29 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """Tables A3 and A4 in the Online appendix present a comparison of poverty and inequality
+results from ECUAMOD and COLMOD,""" ; # use triple quotes
+
+    citec:on_pdf_page 13  ; # integer
+
+    citec:spans_pages false ; # true/false
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:mention_type ;
+                           rdfs:label """software""" ; # put one in triple quotes
+                           ca:certainty 10 ; # integer
+                           ca:memo """googled""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_was_used ;
+                           citec:isPresent true; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_name ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """ECUAMOD""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_number ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_date ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:url ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:creator ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+.
+doi:10.1007%2Fs10888-017-9367-5_TL30 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """Tables A3 and A4 in the Online appendix present a comparison of poverty and inequality
+results from ECUAMOD and COLMOD,""" ; # use triple quotes
+
+    citec:on_pdf_page 13  ; # integer
+
+    citec:spans_pages false ; # true/false
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:mention_type ;
+                           rdfs:label """software""" ; # put one in triple quotes
+                           ca:certainty 10 ; # integer
+                           ca:memo """googled""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_was_used ;
+                           citec:isPresent true; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_name ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """COLMOD""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_number ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_date ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:url ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:creator ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+.
+doi:10.1007%2Fs10888-017-9367-5_TL31 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """with those obtained directly from ENIGHUR
+and ECV,""" ; # use triple quotes
+
+    citec:on_pdf_page 13  ; # integer
+
+    citec:spans_pages false ; # true/false
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:mention_type ;
+                           rdfs:label """other""" ; # put one in triple quotes
+                           ca:certainty 10 ; # integer
+                           ca:memo """googled, both are surveys""" ; # use triple quotes
+                         ] ;
+        ] ;
+.
+doi:10.1007%2Fs10888-017-9367-5_TL32 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """Poverty and inequality estimated with
+ECUAMOD and COLMOD only slightly underestimate those obtained""" ; # use triple quotes
+
+    citec:on_pdf_page 13  ; # integer
+
+    citec:spans_pages false ; # true/false
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:mention_type ;
+                           rdfs:label """software""" ; # put one in triple quotes
+                           ca:certainty 10 ; # integer
+                           ca:memo """googled""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_was_used ;
+                           citec:isPresent true; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_name ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """ECUAMOD""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_number ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_date ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:url ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:creator ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+.
+doi:10.1007%2Fs10888-017-9367-5_TL33 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """Poverty and inequality estimated with
+ECUAMOD and COLMOD only slightly underestimate those obtained""" ; # use triple quotes
+
+    citec:on_pdf_page 13  ; # integer
+
+    citec:spans_pages false ; # true/false
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:mention_type ;
+                           rdfs:label """software""" ; # put one in triple quotes
+                           ca:certainty 10 ; # integer
+                           ca:memo """googled""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_was_used ;
+                           citec:isPresent true; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_name ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """COLMOD""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_number ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_date ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:url ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:creator ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+.
+doi:10.1007%2Fs10888-017-9367-5_TL34 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """ment (ENEMDU) is used to produce official
+estimates of income poverty and inequality. The discrepancy is mainly driven by the fact
+that ENIGHUR, on which ECUAMOD input data are based, contains much more detailed
+income information than ENEMDU""" ; # use triple quotes
+
+    citec:on_pdf_page 13  ; # integer
+
+    citec:spans_pages false ; # true/false
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:mention_type ;
+                           rdfs:label """software""" ; # put one in triple quotes
+                           ca:certainty 10 ; # integer
+                           ca:memo """googled""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_was_used ;
+                           citec:isPresent true; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_name ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """ECUAMOD""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_number ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_date ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:url ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:creator ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+.
+doi:10.1007%2Fs10888-017-9367-5_TL35 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """Fig. 1 Tax-benefit components as a share of household disposable income (2014) Source: ECUAMOD
+version 1.0 and COLMOD version 1.0""" ; # use triple quotes
+
+    citec:on_pdf_page 15  ; # integer
+
+    citec:spans_pages false ; # true/false
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:mention_type ;
+                           rdfs:label """software""" ; # put one in triple quotes
+                           ca:certainty 10 ; # integer
+                           ca:memo """googled""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_was_used ;
+                           citec:isPresent true; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_name ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """ECUAMOD""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_number ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """version 1.0""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_date ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:url ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:creator ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+.
+doi:10.1007%2Fs10888-017-9367-5_TL36 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """Fig. 1 Tax-benefit components as a share of household disposable income (2014) Source: ECUAMOD
+version 1.0 and COLMOD version 1.0""" ; # use triple quotes
+
+    citec:on_pdf_page 15  ; # integer
+
+    citec:spans_pages false ; # true/false
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:mention_type ;
+                           rdfs:label """software""" ; # put one in triple quotes
+                           ca:certainty 10 ; # integer
+                           ca:memo """googled""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_was_used ;
+                           citec:isPresent true; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_name ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """COLMOD""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_number ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """version 1.0""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_date ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:url ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:creator ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+.
+doi:10.1007%2Fs10888-017-9367-5_TL37 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """Colombia 56.4 59.2 − 2.8 36.3 39.8 − 3.5
+Source: ECUAMOD version 1.0 and COLMOD version 1.0""" ; # use triple quotes
+
+    citec:on_pdf_page 16  ; # integer
+
+    citec:spans_pages false ; # true/false
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:mention_type ;
+                           rdfs:label """software""" ; # put one in triple quotes
+                           ca:certainty 10 ; # integer
+                           ca:memo """googled""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_was_used ;
+                           citec:isPresent true; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_name ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """ECUAMOD""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_number ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """version 1.0""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_date ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:url ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:creator ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+.
+doi:10.1007%2Fs10888-017-9367-5_TL38 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """Colombia 56.4 59.2 − 2.8 36.3 39.8 − 3.5
+Source: ECUAMOD version 1.0 and COLMOD version 1.0""" ; # use triple quotes
+
+    citec:on_pdf_page 16  ; # integer
+
+    citec:spans_pages false ; # true/false
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:mention_type ;
+                           rdfs:label """software""" ; # put one in triple quotes
+                           ca:certainty 10 ; # integer
+                           ca:memo """googled""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_was_used ;
+                           citec:isPresent true; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_name ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """COLMOD""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_number ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """version 1.0""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_date ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:url ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:creator ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+.
+doi:10.1007%2Fs10888-017-9367-5_TL39 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """Note: EC: Ecuador; CO: Colombia. Policy year 2014. Source: ECUAMOD version 1.0 and COLMOD version 1.0""" ; # use triple quotes
+
+    citec:on_pdf_page 18  ; # integer
+
+    citec:spans_pages false ; # true/false
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:mention_type ;
+                           rdfs:label """software""" ; # put one in triple quotes
+                           ca:certainty 10 ; # integer
+                           ca:memo """googled""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_was_used ;
+                           citec:isPresent true; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_name ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """ECUAMOD""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_number ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """version 1.0""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_date ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:url ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:creator ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+.
+doi:10.1007%2Fs10888-017-9367-5_TL40 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """Note: EC: Ecuador; CO: Colombia. Policy year 2014. Source: ECUAMOD version 1.0 and COLMOD version 1.0""" ; # use triple quotes
+
+    citec:on_pdf_page 18  ; # integer
+
+    citec:spans_pages false ; # true/false
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:mention_type ;
+                           rdfs:label """software""" ; # put one in triple quotes
+                           ca:certainty 10 ; # integer
+                           ca:memo """googled""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_was_used ;
+                           citec:isPresent true; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_name ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """COLMOD""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_number ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """version 1.0""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_date ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:url ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:creator ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+.
+doi:10.1007%2Fs10888-017-9367-5_TL41 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """Note: EC: Ecuador; CO: Colombia. DPI= Disposable Income. Policy year 2014
+Source: ECUAMOD version 1.0 and COLMOD version 1.0""" ; # use triple quotes
+
+    citec:on_pdf_page 20  ; # integer
+
+    citec:spans_pages false ; # true/false
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:mention_type ;
+                           rdfs:label """software""" ; # put one in triple quotes
+                           ca:certainty 10 ; # integer
+                           ca:memo """googled""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_was_used ;
+                           citec:isPresent true; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_name ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """ECUAMOD""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_number ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """version 1.0""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_date ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:url ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:creator ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+.
+doi:10.1007%2Fs10888-017-9367-5_TL42 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """Note: EC: Ecuador; CO: Colombia. DPI= Disposable Income. Policy year 2014
+Source: ECUAMOD version 1.0 and COLMOD version 1.0""" ; # use triple quotes
+
+    citec:on_pdf_page 20  ; # integer
+
+    citec:spans_pages false ; # true/false
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:mention_type ;
+                           rdfs:label """software""" ; # put one in triple quotes
+                           ca:certainty 10 ; # integer
+                           ca:memo """googled""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_was_used ;
+                           citec:isPresent true; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_name ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """COLMOD""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_number ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """version 1.0""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_date ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:url ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:creator ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+.
+doi:10.1007%2Fs10888-017-9367-5_TL43 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """The results presented here are based on ECUAMOD v1.0 and COLMOD v1.0. ECUAMOD
+is developed, maintained and managed by UNU-WIDER in collaboration with the EUROMOD team at
+ISER (University of Essex), SASPRI (Southern African Social Policy Research Institute) and local partners
+in selected developing countries (Ethiopia, Ghana, Mozambique, Tanzania, Zambia, Ecuador and Viet
+Nam) in the scope of the SOUTHMOD project. """ ; # use triple quotes
+
+    citec:on_pdf_page 22  ; # integer
+
+    citec:spans_pages false ; # true/false
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:mention_type ;
+                           rdfs:label """software""" ; # put one in triple quotes
+                           ca:certainty 10 ; # integer
+                           ca:memo """googled""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_was_used ;
+                           citec:isPresent true; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_name ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """ECUAMOD""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_number ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """v1.0""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_date ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:url ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:creator ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+.
+doi:10.1007%2Fs10888-017-9367-5_TL44 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """The results presented here are based on ECUAMOD v1.0 and COLMOD v1.0. ECUAMOD
+is developed, maintained and managed by UNU-WIDER in collaboration with the EUROMOD team at
+ISER (University of Essex), SASPRI (Southern African Social Policy Research Institute) and local partners
+in selected developing countries (Ethiopia, Ghana, Mozambique, Tanzania, Zambia, Ecuador and Viet
+Nam) in the scope of the SOUTHMOD project. """ ; # use triple quotes
+
+    citec:on_pdf_page 22  ; # integer
+
+    citec:spans_pages false ; # true/false
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:mention_type ;
+                           rdfs:label """software""" ; # put one in triple quotes
+                           ca:certainty 10 ; # integer
+                           ca:memo """googled""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_was_used ;
+                           citec:isPresent true; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_name ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """COLMOD""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_number ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """v1.0""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_date ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:url ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:creator ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+.
+doi:10.1007%2Fs10888-017-9367-5_TL45 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """The results presented here are based on ECUAMOD v1.0 and COLMOD v1.0. ECUAMOD
+is developed, maintained and managed by UNU-WIDER in collaboration with the EUROMOD team at
+ISER (University of Essex), SASPRI (Southern African Social Policy Research Institute) and local partners
+in selected developing countries (Ethiopia, Ghana, Mozambique, Tanzania, Zambia, Ecuador and Viet
+Nam) in the scope of the SOUTHMOD project. """ ; # use triple quotes
+
+    citec:on_pdf_page 22  ; # integer
+
+    citec:spans_pages false ; # true/false
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:mention_type ;
+                           rdfs:label """software""" ; # put one in triple quotes
+                           ca:certainty 10 ; # integer
+                           ca:memo """googled""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_was_used ;
+                           citec:isPresent true; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_name ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """SOUTHMOD""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_number ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_date ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:url ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:creator ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+.
+doi:10.1007%2Fs10888-017-9367-5_TL46 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """The local partner for ECUAMOD is Instituto de Altos Estudios
+Nacionales (IAEN). We are indebted to the many people who have contributed to the development of
+SOUTHMOD and ECUAMOD. """ ; # use triple quotes
+
+    citec:on_pdf_page 22  ; # integer
+
+    citec:spans_pages false ; # true/false
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:mention_type ;
+                           rdfs:label """software""" ; # put one in triple quotes
+                           ca:certainty 10 ; # integer
+                           ca:memo """googled""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_was_used ;
+                           citec:isPresent true; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_name ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """ECUAMOD""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_number ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_date ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:url ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:creator ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+.
+doi:10.1007%2Fs10888-017-9367-5_TL47 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """The local partner for ECUAMOD is Instituto de Altos Estudios
+Nacionales (IAEN). We are indebted to the many people who have contributed to the development of
+SOUTHMOD and ECUAMOD. """ ; # use triple quotes
+
+    citec:on_pdf_page 22  ; # integer
+
+    citec:spans_pages false ; # true/false
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:mention_type ;
+                           rdfs:label """software""" ; # put one in triple quotes
+                           ca:certainty 10 ; # integer
+                           ca:memo """googled""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_was_used ;
+                           citec:isPresent true; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:software_name ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """SOUTHMOD""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_number ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:version_date ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:url ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "tonyli0409" ;
+          ca:appliesCode [ rdf:type citec:creator ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+.
